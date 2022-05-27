@@ -7,35 +7,34 @@ var link = document.createElement('link');
        document.head.appendChild(link);
 
 var widget = document.getElementsByClassName("productView-options");
-var model = '<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">'+
+var model = '<!-- Button trigger modal -->'+
+'<!-- Modal -->'+
+'<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">'+
   '<div class="modal-dialog">'+
     '<div class="modal-content">'+
-     ' <div class="modal-header">'+
-      '  <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>'+
+      '<div class="modal-header">'+
+       ' <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>'+
        ' <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>'+
       '</div>'+
-      '<div class="modal-body">'+
-       'Store 1 '+
-       '<br>'+
-       'Store 2 '+
-       '<br>'+
-       'Store 3 '+
-       '<br>'+
-       'Store 4 '+
-       '<br>'+
-       'Store 5 '+
-       '<br>'+
-       'Store 6 '+
+     ' <div class="modal-body">'+
+      'Store1 <br>'+
+      'Store2 <br>'+
+      'Store3 <br>'+
+      'Store4 <br>'+
+      'Store5'+
       '</div>'+
       '<div class="modal-footer">'+
-       ' <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>'+
-     ' </div>'+
-    '</div>'+
-  '</div>'+
-'</div>';
+     '   <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>'+
+    '    <button type="button" class="btn btn-primary">Understood</button>'+
+   '   </div>'+
+  '  </div>'+
+ ' </div>'+
+'</div>'
+
 widget[0].innerHTML = widget[0].innerHTML + 
-			'<br><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">BOPIS</button>'+
-			model;
+			'<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">'+
+  'BOPIS'+
+'</button>'+model;
 
 
     });
